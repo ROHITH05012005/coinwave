@@ -1,0 +1,130 @@
+.app-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2rem;
+  background: radial-gradient(circle at top left, #1a1b26, #0d0f12);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logo-icon {
+  color: #00e6ff;
+  filter: drop-shadow(0 0 10px rgba(0, 230, 255, 0.5));
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(90deg, #00e6ff, #a060ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.crypto-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crypto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 230, 255, 0.1);
+  border-color: rgba(0, 230, 255, 0.2);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.coin-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.coin-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.coin-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.coin-symbol {
+  font-size: 0.8rem;
+  color: #8892b0;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.change-positive {
+  color: #00ff9d;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.change-negative {
+  color: #ff4757;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.chart-container {
+  margin-top: 1.5rem;
+  height: 80px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 1.5rem;
+  color: #00e6ff;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}

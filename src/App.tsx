@@ -94,7 +94,7 @@ function App() {
         })}
       </div>
       <footer style={{ textAlign: "center", padding: "2rem", color: "#a0aec0", fontSize: "0.875rem" }}>
-        Built by <strong>FUERA</strong>
+        Built by <a href="https://www.fuera.in.net/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "underline" }}><strong>FUERA</strong></a>
       </footer>
     </div>
   )
